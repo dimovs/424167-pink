@@ -36,110 +36,106 @@
             <legend class="hidden">
               Личные данные
             </legend>
-            <p class="form__item">
+            <div class="form__item">
               <label class="form__title" for="last-name">Фамилия:</label>
               <input id="last-name" type="text" name="last-name" placeholder="Укажите фамилию *" required>
-            </p>
-            <p class="form__item">
+            </div>
+            <div class="form__item">
               <label class="form__title" for="first-name">Имя:</label>
               <input id="first-name" type="text" name="first-name" placeholder="Введите ваше имя *" required>
-            </p>
-            <p class="form__item">
+            </div>
+            <div class="form__item">
               <label class="form__title" for="middle-name">Отчество:</label>
               <input id="middle-name" type="text" name="middle-name" placeholder="Ну и отчество тоже">
-            </p>
+            </div>
           </fieldset>
           <fieldset class="form__block">
             <legend class="form__title">
               Ваши безбашенные достижения в путешествии
             </legend>
-            <p class="form__item">
+            <div class="form__item">
               <input id="selfie-shark" type="checkbox" name="achievements" value="selfie-shark">
               <label for="selfie-shark">Сделал селфи с акулой</label>
-            </p>
-            <p class="form__item">
+            </div>
+            <div class="form__item">
               <input id="sunburn" type="checkbox" name="achievements" value="sunburn">
               <label for="sunburn">Обгорел на пляже</label>
-            </p>
-            <p class="form__item">
-              <input id="Chuck-Norris" type="checkbox" name="achievements" value="Chuck-Norris">
-              <label for="Chuck-Norris">Видел Чака Норриса</label>
-            </p>
-            <p class="form__item">
+            </div>
+            <div class="form__item">
+              <input id="chuck-norris" type="checkbox" name="achievements" value="chuck-norris">
+              <label for="chuck-norris">Видел Чака Норриса</label>
+            </div>
+            <div class="form__item">
               <input id="souvenirs" type="checkbox" name="achievements" value="souvenirs">
               <label for="souvenirs">Накупил сувениров</label>
-            </p>
-            <p class="form__item">
+            </div>
+            <div class="form__item">
               <input id="stayed-calm" type="checkbox" name="achievements" value="stayed-calm">
               <label for="stayed-calm">Удержал башню</label>
-            </p>
-            <p class="form__item">
+            </div>
+            <div class="form__item">
               <input id="ruined-hotel" type="checkbox" name="achievements" value="ruined-hotel">
               <label for="ruined-hotel">Разгромил отель</label>
-            </p>
+            </div>
           </fieldset>
           <fieldset class="form__block">
             <legend class="hidden">
               Конктактные данные
             </legend>
-            <p class="form__item">
+            <div class="form__item">
               <label class="form__title" for="phone">Номер телефона</label>
               <input id="phone" type="tel" name="phone" placeholder="Номер, пожалуйста">
-            </p>
-            <p class="form__item">
+            </div>
+            <div class="form__item">
               <label class="form__title" for="email">Адрес почты</label>
               <input id="email" type="email" name="email" placeholder="Введите почту *" required>
-            </p>
+            </div>
           </fieldset>
           <fieldset class="form__block">
             <legend class="form__title">
               С каким приложением путешествовали?
             </legend>
-            <p class="form__item">
-              <input id="iOS" type="radio" name="system" value="iOS" checked>
-              <label for="iOS">Pink для iOS</label>
-            </p>
-            <p class="form__item">
-              <input id="Android" type="radio" name="system" value="Android">
-              <label for="Android">Pink на Android</label>
-            </p>
-            <p class="form__item">
-              <input id="Windows" type="radio" name="system" value="Windows">
-              <label for="Windows">Windows Phone</label>
-            </p>
+            <div class="form__item">
+              <input id="ios" type="radio" name="system" value="ios" checked>
+              <label for="ios">Pink для iOS</label>
+            </div>
+            <div class="form__item">
+              <input id="android" type="radio" name="system" value="android">
+              <label for="android">Pink на Android</label>
+            </div>
+            <div class="form__item">
+              <input id="windows" type="radio" name="system" value="windows">
+              <label for="windows">Windows Phone</label>
+            </div>
           </fieldset>
-          <p class="form__block">
+          <div class="form__block">
             <label class="form__title" for="desc">
               Опишите свои эмоции
             </label>
             <textarea id="desc" cols="30" rows="10" name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях">
             </textarea>
-          </p>
+          </div>
           <div class="form__block">
-            <p class="form__item"">
+            <div class="form__item">
               <button type="submit">Отправить форму</button>
-            </p>
+            </div>
             <p class="form__item">
-              <span>*</span> &mdash; обязательные поля
+              &mdash; обязательные поля
             </p>
           </div>
         </form>
       </div>
       <div class="popup-confirm" hidden>
         <div class="popup-confirm__inner">
-          <p>
-            <b>Вашка заявка отправлена</b>
-            Спасибо за ваше участие, ваша завка поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.
-          </p>
+          <h2>Вашка заявка отправлена</h2>
+          <p>Спасибо за ваше участие, ваша завка поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
           <button class="btn" type="button">Закрыть окно</button>
         </div>
       </div>
       <div class="popup-failure" hidden>
         <div class="popup-failure__inner">
-          <p>
-            <b>Что-то пошло не так!</b>
-            Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
-          </p>
+          <h2>Что-то пошло не так!</h2>
+          <p>Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
           <button class="btn" type="button">ОК</button>
         </div>
       </div>
@@ -149,22 +145,22 @@
       <ul class="social-links page-footer__social">
         <li>
           <a class="social-links__link" href="#">
-            <img src="http://placehold.it/150x100">
+            <img src="http://placehold.it/150x100" alt="Наш Твиттер">
           </a>
         </li>
         <li>
           <a class="social-links__link" href="#">
-            <img src="http://placehold.it/150x100">
+            <img src="http://placehold.it/150x100" alt="Наш Facebook">
           </a>
         </li>
         <li>
           <a class="social-links__link" href="#">
-            <img src="http://placehold.it/150x100">
+            <img src="http://placehold.it/150x100" alt="Наш канал на YouTube">
           </a>
         </li>
       </ul>
       <p class="copyright page-footer__bottom">
-        <span class="copyright__text">Разработано</span>
+        Разработано
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
           <img class="copyright__icon" src="http://placehold.it/150x100">
         </a>
