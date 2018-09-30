@@ -14,10 +14,10 @@
             <a class="menu__link" href="index.html">Главная</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="photo.html">Фотографии</a>
+            <a class="menu__link">Фотографии</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link">Конкурс</a>
+            <a class="menu__link href="form.html">Конкурс</a>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="#">HTML Academy</a>
@@ -152,32 +152,28 @@
             </blockquote>
           </li>
         </ul>
-        <div class="publish page-main__bottom">
-          <p class="publish__title">
-            Затмите их всех! Выкладывайте все, что накопилось в телефоне!
-          </p>
-          <form class="customise">
+        <div class="page-main__publish">
+          <form class="customise" method="post" action="https://echo.htmlacademy.ru">
+            <p class="customise__title">
+              Затмите их всех! Выкладывайте все, что накопилось в телефоне!
+            </p>
             <div class="customise__pic">
               <img src="http://placehold.it/150x100">
-              <input type="file">
+              <label class="hidden" for="pic">Загрузить фото для редактирования: </label>
+              <input id="pic" type="file">
             </div>
             <div class="customise__constructor">
-              <div class="customise__crop">
-                <img class="customise__icon customise__icon--active" src="http://placehold.it/150x100">
-                <input type="range">
-              </div>
-              <div>
-                <img class="customise__paint" src="http://placehold.it/150x100">
-                <input type="range">
-              </div>
-              <div>
-                <img class="customise__bright" src="http://placehold.it/150x100">
-                <input type="range">
-              </div>
-              <div>
-                <button сlass="btn public btn--active" type="submit">Запостить</button>
-                <button class="btn cancel btn--disabled"type="button">Отмена</button>
-              </div>
+              <label class="hidden" for="crop">Crop</label>
+              <input id="crop" type="radio" name="toggle" value="crop" checked>
+              <label class="hidden" for="paint">Paint</label>
+              <input id="paint" type="radio" name="toggle" value="paint">
+              <label class="hidden" for="brightness">Change brightness</label>
+              <input id="brightness" type="radio" name="toggle" value="brightness">
+              <input type="range">
+            </div>
+            <div class="customise__publish">
+              <button сlass="btn public btn--active" type="submit">Запостить</button>
+              <button class="btn cancel btn--disabled" type="button">Отмена</button>
             </div>
           </form>
         </div>
@@ -188,22 +184,22 @@
       <ul class="social-links page-footer__social">
         <li>
           <a class="social-links__link" href="#">
-            <img src="http://placehold.it/150x100">
+            <img src="http://placehold.it/150x100" alt="Наш Твиттер">
           </a>
         </li>
         <li>
           <a class="social-links__link" href="#">
-            <img src="http://placehold.it/150x100">
+            <img src="http://placehold.it/150x100" alt="Наш Facebook">
           </a>
         </li>
         <li>
           <a class="social-links__link" href="#">
-            <img src="http://placehold.it/150x100">
+            <img src="http://placehold.it/150x100" alt="Наш канал на YouTube">
           </a>
         </li>
       </ul>
       <p class="copyright page-footer__bottom">
-        <span class="copyright__text">Разработано</span>
+        Разработано
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
           <img class="copyright__icon" src="http://placehold.it/150x100">
         </a>
