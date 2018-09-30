@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк - Форма конкурса</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="logo page-header__logo">Pink</a>
+      <nav class="menu page-header__menu">
+        <button class="menu__trigger" type="button">Открыть меню</button>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="index.html">Главная</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link">Фотографии</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link href="form.html">Конкурс</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+      <h1 class="page-header__heading">Фотографии пользователей</h1>
+    </header>
+    <main class="page-main">
+      <div class="page-main__inner">
+        <p class="page-main__title">
+          Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+        </p>
+        <ul class="selection page-main__list">
+          <li class="selection__item">
+            <a class="selection__link" href="#">
+              <img class="selection__pic" img src="http://placehold.it/150x100">
+            </a>
+            <blockquote>
+              <cite class="selection__author">Анна</cite>
+              <span class="selection__time">5 минут назад</span>
+              <p class="selection__comment">
+                Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
+              </p>
+              <p class="selection__rate">
+                <input id="like" type="checkbox">
+                <label for="like">Нравится:</label>
+                <span>215</span>
+              </p>
+            </blockquote>
+          </li>
+          <li class="selection__item">
+            <a class="selection__link" href="#">
+              <img class="selection__pic" img src="http://placehold.it/150x100">
+            </a>
+            <blockquote>
+              <cite class="selection__author">Левон</cite>
+              <span class="selection__time">5 часов назад</span>
+              <p class="selection__comment">
+                Вчера он на луну летал, сегодня в руки к нам попал.
+              </p>
+              <p class="selection__rate">
+                <input id="like" type="checkbox">
+                <label for="like">Нравится:</label>
+                <span>356</span>
+              </p>
+            </blockquote>
+          </li>
+          <li class="selection__item">
+            <a class="selection__link" href="#">
+              <img class="selection__pic" img src="http://placehold.it/150x100">
+            </a>
+            <blockquote>
+              <cite class="selection__author">Антон</cite>
+              <span class="selection__time">12 часов назад</span>
+              <p class="selection__comment">
+                Соседи будут рады!
+              </p>
+              <p class="selection__rate">
+                <input id="like" type="checkbox">
+                <label for="like">Нравится:</label>
+                <span>666</span>
+              </p>
+            </blockquote>
+          </li>
+          <li class="selection__item">
+            <a class="selection__link" href="#">
+              <img class="selection__pic" img src="http://placehold.it/150x100">
+            </a>
+            <blockquote>
+              <cite class="selection__author">Борис</cite>
+              <span class="selection__time">20 часов назад</span>
+              <p class="selection__comment">
+                Здесь могла быть ваша цитата о высоком и вечном.
+              </p>
+              <p class="selection__rate">
+                <input id="like" type="checkbox">
+                <label for="like">Нравится:</label>
+                <span>215</span>
+              </p>
+            </blockquote>
+          </li>
+          <li class="selection__item">
+            <a class="selection__link" href="#">
+              <img class="selection__pic" img src="http://placehold.it/150x100">
+            </a>
+            <blockquote>
+              <cite class="selection__author">Сергей</cite>
+              <span class="selection__time">25 часов назад</span>
+              <p class="selection__comment">
+                Самая кубанская в мире!
+              </p>
+              <p class="selection__rate">
+                <input id="like" type="checkbox">
+                <label for="like">Нравится:</label>
+                <span>4</span>
+              </p>
+            </blockquote>
+          </li>
+          <li class="selection__item">
+            <a class="selection__link" href="#">
+              <img class="selection__pic" img src="http://placehold.it/150x100">
+            </a>
+            <blockquote>
+              <cite class="selection__author">Максим</cite>
+              <span class="selection__time">40 часов назад</span>
+              <p class="selection__comment">
+                Где снег-то?
+              </p>
+              <p class="selection__rate">
+                <input id="like" type="checkbox">
+                <label for="like">Нравится:</label>
+                <span>150</span>
+              </p>
+            </blockquote>
+          </li>
+          <li class="selection__item">
+            <a class="selection__link" href="#">
+              <img class="selection__pic" img src="http://placehold.it/150x100">
+            </a>
+            <blockquote>
+              <cite class="selection__author">Надежда</cite>
+              <span class="selection__time">45 часов назад</span>
+              <p class="selection__comment">
+                Всем GM b взаимные лайки!
+              </p>
+              <p class="selection__rate">
+                <input id="like" type="checkbox">
+                <label for="like">Нравится:</label>
+                <span>2560</span>
+              </p>
+            </blockquote>
+          </li>
+        </ul>
+        <div class="page-main__publish">
+          <form class="customise" method="post" action="https://echo.htmlacademy.ru">
+            <p class="customise__title">
+              Затмите их всех! Выкладывайте все, что накопилось в телефоне!
+            </p>
+            <div class="customise__pic">
+              <img src="http://placehold.it/150x100">
+              <label class="hidden" for="pic">Загрузить фото для редактирования: </label>
+              <input id="pic" type="file">
+            </div>
+            <div class="customise__constructor">
+              <label class="hidden" for="crop">Crop</label>
+              <input id="crop" type="radio" name="toggle" value="crop" checked>
+              <label class="hidden" for="paint">Paint</label>
+              <input id="paint" type="radio" name="toggle" value="paint">
+              <label class="hidden" for="brightness">Change brightness</label>
+              <input id="brightness" type="radio" name="toggle" value="brightness">
+              <input type="range">
+            </div>
+            <div class="customise__publish">
+              <button сlass="btn public btn--active" type="submit">Запостить</button>
+              <button class="btn cancel btn--disabled" type="button">Отмена</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <a class="logo page-footer__top" href="index.html">Pink</a>
+      <ul class="social-links page-footer__social">
+        <li>
+          <a class="social-links__link" href="#">
+            <img src="http://placehold.it/150x100" alt="Наш Твиттер">
+          </a>
+        </li>
+        <li>
+          <a class="social-links__link" href="#">
+            <img src="http://placehold.it/150x100" alt="Наш Facebook">
+          </a>
+        </li>
+        <li>
+          <a class="social-links__link" href="#">
+            <img src="http://placehold.it/150x100" alt="Наш канал на YouTube">
+          </a>
+        </li>
+      </ul>
+      <p class="copyright page-footer__bottom">
+        Разработано
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+          <img class="copyright__icon" src="http://placehold.it/150x100">
+        </a>
+      </p>
+    </footer>
+  </body>
+</html>
