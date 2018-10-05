@@ -1,0 +1,37 @@
+.downloads {
+  background-color: rgb(29, 38, 49);
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 30px;
+}
+
+.downloads__links {
+  @include reset-ul;
+  text-align: center;
+
+  li {
+    display: inline-block;
+  }
+}
+
+.downloads-link {
+
+  &--apple {
+
+  }
+
+  &--google {
+
+  }
+
+  &--microsoft {
+
+  }
+}
+
+.downloads__desc {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  line-height: 24px;
+  font-weight: $font-light;
+}

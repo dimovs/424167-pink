@@ -1,0 +1,38 @@
+.hidden {
+  @include hidden;
+}
+
+.features {
+  padding: 0 20px;
+  text-align: center;
+}
+
+.features__text {
+  font-size: 24px;
+  font-weight: $font-light;
+}
+
+.features__intro {
+  background-color: $bgc-section-odd;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.features__list {
+  padding: 0 20px 320px 20px;
+  background-color: $bgc-section-even;
+  background-image: url('img/iphone-screen-mobile@1x.png');
+}
+
+.features__title {
+  font-size: 18px;
+  font-weight: $font-bold;
+}
+
+.features__desc {
+  margin: 0;
+  font-weight: $font-light;
+  margin-bottom: 30px;
+}
