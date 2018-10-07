@@ -1,0 +1,15 @@
+.contacts {
+  text-align: center;
+}
+
+.contacts__title {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.contacts__phone,
+.contacts__email,
+.contacts__address {
+  color: rgb(210, 40, 86);
+}

@@ -1,17 +1,5 @@
-// colors
-$bgc-section-even: rgb(242, 242, 242);
-$bgc-section-odd: rgb(255, 255, 255);
-$bgc-menu: rgb(40, 54, 69);
-$c-header-text: rgb(255, 255, 255);
-
-$action-text: rgb(255, 255, 255);
-$base-text: rgb(40, 54, 69);
-$title-text: rgb(210, 40, 86);
-
-$disabled: rgb(181, 185, 190);
-
-//font family
-$font-type: 'Open Sans', Arial, sans-serif;
+//font
+$font-type: "Open Sans", arial, sans-serif;
 $font-bold: 700;
 $font-regular: 400;
 $font-light: 300;
@@ -20,24 +8,3 @@ $font-light: 300;
 $mobile: 320px;
 $tablet: 660px;
 $desktop: 960px;
-
-
-//mixins
-@mixin hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-@mixin reset-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}

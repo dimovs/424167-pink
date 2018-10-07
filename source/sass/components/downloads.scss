@@ -1,37 +1,24 @@
 .downloads {
   background-color: rgb(29, 38, 49);
-  text-align: center;
-  padding-top: 25px;
-  padding-bottom: 30px;
+  padding: 30px 0 35px 0;
+  color: rgb(255, 255, 255);
+}
+
+.downloads__inner {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
 }
 
 .downloads__links {
-  @include reset-ul;
-  text-align: center;
-
-  li {
-    display: inline-block;
-  }
-}
-
-.downloads-link {
-
-  &--apple {
-
-  }
-
-  &--google {
-
-  }
-
-  &--microsoft {
-
-  }
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 30px auto 25px;
 }
 
 .downloads__desc {
-  text-align: center;
-  color: rgb(255, 255, 255);
+  font-weight: 300;
   line-height: 24px;
-  font-weight: $font-light;
+  text-align: center;
 }

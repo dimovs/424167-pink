@@ -1,24 +1,35 @@
 .page-footer {
-  background-color: $bgc-section-odd;
+  padding-top: 40px;
+  background-color: rgb(255, 255, 255);
   text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.page-footer__inner {
+  padding-right: 20px;
+  padding-left: 20px;
+  margin: 0 auto;
 }
 
 .page-footer__title {
   font-size: 24px;
-  color: $base-text;
+  font-weight: 300;
+  text-align: center;
 }
 
 .page-footer__contacts {
-
+  margin-bottom: 35px;
 }
 
-.contacts__title {
-  font-size: 18px;
+.page-footer__social,
+.page-footer__bottom {
+  margin-top: 40px;
 }
 
-.contacts__item {
-  a {
-    text-decoration: none;
-    color: rgb(210, 40, 86);
-  }
+.page-footer__map {
+  min-height: 200px;
+  width: 100%;
+  background: rgb(255, 255, 255) url("../img/bg-map-mobile@1x.png") no-repeat;
+  background-position: 0 -450px;
 }
