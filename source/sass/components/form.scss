@@ -17,6 +17,14 @@
   margin: 0;
   padding: 35px 0 45px 0;
   border: none;
+
+  &--bgc-even {
+    background-color: rgb(242, 242, 242);
+  }
+
+  &--bgc-odd {
+    background-color: rgb(255, 255, 255);
+  }
 }
 
 .form__title {
@@ -26,29 +34,23 @@
   color: rgb(210, 40, 86);
   padding-left: 25px;
   text-transform: uppercase;
+
+  &--align-c {
+    text-align: center;
+    padding: 0;
+  }
 }
 
-.form__title--align-c {
-  text-align: center;
-  padding: 0;
-}
+.form__item {
+  &--condition {
+    text-align: center;
+    text-transform: uppercase;
+  }
 
-.form__block--bgc-even {
-  background-color: rgb(242, 242, 242);
-}
-
-.form__block--bgc-odd {
-  background-color: rgb(255, 255, 255);
-}
-
-.form__item--condition {
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.form__item--condition::before {
-  content: "*";
-  color: rgb(210, 40, 86);
+  &-condition::before {
+    content: "*";
+    color: rgb(210, 40, 86);
+  }
 }
 
 .form__button {
