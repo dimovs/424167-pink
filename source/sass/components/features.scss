@@ -1,0 +1,38 @@
+.features {
+  text-align: center;
+  background: rgb(242, 242, 242);
+}
+
+.features__inner {
+  padding-right: 20px;
+  padding-left: 20px;
+  margin: 0 auto;
+}
+
+.features__intro {
+  margin: 0 -20px;
+  padding: 40px 0;
+  background-color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.features__text {
+  margin-bottom: 30px;
+}
+
+.features__list {
+  padding: 50px 20px 320px 20px;
+  background: rgb(242, 242, 242) url("../img/iphone-screen-mobile@1x.png") no-repeat center 575px;
+}
+
+.features__title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.features__desc {
+  margin: 0;
+  font-weight: 400;
+  margin-bottom: 30px;
+}

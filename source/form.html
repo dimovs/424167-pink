@@ -3,36 +3,41 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк - Форма конкурса</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
-      <a class="logo page-header__logo">Pink</a>
-      <nav class="menu page-header__menu">
-        <button class="menu__trigger" type="button">Открыть меню</button>
-        <ul class="menu__list">
-          <li class="menu__item">
-            <a class="menu__link" href="index.html">Главная</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="photo.html">Фотографии</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link">Конкурс</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
-      <h1 class="page-header__heading">Конкурс на самое безбашенное путешествие с Pink</h1>
+    <header class="page-header page-header--no-index">
+      <div class="page-header__inner">
+        <a class="page-header__logo">
+          <img src="img/logo-pink-white-mobile.svg" alt="Pink">
+        </a>
+        <nav class="menu page-header__menu">
+          <button class="menu__trigger" type="button">Открыть меню</button>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="index.html">Главная</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link">Конкурс</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+        <h1 class="page-header__heading">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </div>
     </header>
     <main class="page-main">
       <div class="page-main__inner">
-        <p>
+        <p class="page-main__desc">
           Поделитесь своей историей и получите шанс выиграть ценный приз &mdash; 1000 миль на вашу бонусную карту!
         </p>
         <form class="form" method="post" action="https://echo.htmlacademy.ru">
-          <fieldset class="form__block">
+          <fieldset class="form__block form__block--bgc-odd">
             <legend class="hidden">
               Личные данные
             </legend>
@@ -49,8 +54,8 @@
               <input id="middle-name" type="text" name="middle-name" placeholder="Ну и отчество тоже">
             </div>
           </fieldset>
-          <fieldset class="form__block">
-            <legend class="form__title">
+          <fieldset class="form__block form__block--bgc-even">
+            <legend class="form__title form__title--align-c">
               Ваши безбашенные достижения в путешествии
             </legend>
             <div class="form__item">
@@ -78,7 +83,7 @@
               <label for="ruined-hotel">Разгромил отель</label>
             </div>
           </fieldset>
-          <fieldset class="form__block">
+          <fieldset class="form__block form__block--bgc-odd">
             <legend class="hidden">
               Конктактные данные
             </legend>
@@ -91,8 +96,8 @@
               <input id="email" type="email" name="email" placeholder="Введите почту *" required>
             </div>
           </fieldset>
-          <fieldset class="form__block">
-            <legend class="form__title">
+          <fieldset class="form__block form__block--bgc-even">
+            <legend class="form__title form__title--align-c">
               С каким приложением путешествовали?
             </legend>
             <div class="form__item">
@@ -108,18 +113,18 @@
               <label for="windows">Windows Phone</label>
             </div>
           </fieldset>
-          <div class="form__block">
-            <label class="form__title" for="desc">
-              Опишите свои эмоции
+          <div class="form__block form__block--bgc-odd">
+            <label class="form__title form__title--align-c" for="desc">
+            Опишите свои эмоции
             </label>
-            <textarea id="desc" cols="30" rows="10" name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях">
+            <textarea id="desc" rows="5" name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях">
             </textarea>
           </div>
-          <div class="form__block">
+          <div class="form__block form__block--bgc-odd">
             <div class="form__item">
-              <button type="submit">Отправить форму</button>
+              <button class="form__button" type="submit">Отправить форму</button>
             </div>
-            <p class="form__item">
+            <p class="form__item form__item--condition">
               &mdash; обязательные поля
             </p>
           </div>
@@ -141,30 +146,34 @@
       </div>
     </main>
     <footer class="page-footer">
-      <a class="logo page-footer__top" href="index.html">Pink</a>
-      <ul class="social-links page-footer__social">
-        <li>
-          <a class="social-links__link" href="#">
-            <img src="http://placehold.it/150x100" alt="Наш Твиттер">
-          </a>
-        </li>
-        <li>
-          <a class="social-links__link" href="#">
-            <img src="http://placehold.it/150x100" alt="Наш Facebook">
-          </a>
-        </li>
-        <li>
-          <a class="social-links__link" href="#">
-            <img src="http://placehold.it/150x100" alt="Наш канал на YouTube">
-          </a>
-        </li>
-      </ul>
-      <p class="copyright page-footer__bottom">
-        Разработано
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-          <img class="copyright__icon" src="http://placehold.it/150x100">
+      <div class="page-footer__inner">
+        <a class="page-footer__top" href="index.html">
+          <img src="img/logo-pink-blue-mobile.svg" alt="Pink">
         </a>
-      </p>
+        <ul class="social page-footer__social">
+          <li>
+            <a class="social__link" href="#">
+              <img src="img/icon-twitter.svg" alt="Наш Твиттер">
+            </a>
+          </li>
+          <li>
+            <a class="social__link" href="#">
+              <img src="img/icon-facebook.svg" alt="Наш Facebook">
+            </a>
+          </li>
+          <li>
+            <a class="social__link" href="#">
+              <img src="img/icon-youtube.svg" alt="Наш канал на YouTube">
+            </a>
+          </li>
+        </ul>
+        <p class="copyright page-footer__bottom">
+          Разработано
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+            <img class="copyright__icon" src="img/logo-htmlacademy.svg" alt="HTML Academy">
+          </a>
+        </p>
+      </div>
     </footer>
   </body>
 </html>

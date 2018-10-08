@@ -1,0 +1,24 @@
+.downloads {
+  background-color: rgb(29, 38, 49);
+  padding: 30px 0 35px 0;
+  color: rgb(255, 255, 255);
+}
+
+.downloads__inner {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+.downloads__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 30px auto 25px;
+}
+
+.downloads__desc {
+  font-weight: 300;
+  line-height: 1.7;
+  text-align: center;
+}

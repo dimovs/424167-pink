@@ -1,0 +1,15 @@
+.menu {
+  background-color: rgb(40, 54, 69);
+  text-align: center;
+  font-size: 18px;
+  margin: 0 -20px;
+}
+
+.menu__link {
+  display: block;
+  padding: 20px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 1.8;
+  font-weight: 700;
+}
