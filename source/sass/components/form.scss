@@ -1,16 +1,9 @@
-.form {
-  padding: 0;
-
-  input[type="text"],
-  input[type="tel"],
-  input[type="email"],
-  textarea {
-    width: 100%;
-    padding: 20px 25px;
-    border: 2px solid rgb(229, 229, 229);
-    font-size: 14px;
-    line-height: 30px;
-  }
+.form__field {
+  width: 100%;
+  padding: 20px 25px;
+  border: 2px solid rgb(229, 229, 229);
+  font-size: 14px;
+  line-height: 2;
 }
 
 .form__block {
