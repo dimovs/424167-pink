@@ -2,3 +2,26 @@
   padding: 45px;
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .customise__title {
+    font-size: 18px;
+    width: 100%;
+  }
+
+  .customise {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .customise__pic {
+    width: 50%;
+    background-color: rgb(242, 242, 242);
+  }
+
+  .customise__constructor {
+    width: 50%;
+    background-color: rgb(242, 242, 242);
+  }
+}

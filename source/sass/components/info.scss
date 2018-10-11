@@ -1,0 +1,38 @@
+.info {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .info {
+    display: block;
+    padding-left: 50%;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    text-align: left;
+    background-color: rgb(255, 255, 255);
+    background-image: url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+  }
+
+  .info__inner {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+  }
+
+  .info__title {
+    font-size: 28px;
+  }
+
+  .info__link {
+    color: rgb(221, 93, 128);
+    text-decoration: underline;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .info {
+    background-color: rgb(242, 242, 242);
+    padding-left: 370px;
+  }
+}

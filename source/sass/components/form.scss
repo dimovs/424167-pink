@@ -57,3 +57,59 @@
   text-transform: uppercase;
   border: none;
 }
+
+
+@media (min-width: $tablet-width) {
+  .form__block {
+
+    &--subm {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &--bgc-even {
+      background-color: rgb(255, 255, 255);
+    }
+  }
+
+  .form__item {
+
+    &--personal {
+      display: flex;
+    }
+
+    &--condition {
+      width: 300px;
+    }
+
+    &--contacts {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+
+  .form__button {
+    width: 300px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__block {
+    width: 100%;
+
+    &--personal {
+      width: 50%;
+      order: -2;
+    }
+
+    &--app {
+      width: 50%;
+      order: -1;
+    }
+  }
+}

@@ -17,3 +17,10 @@
   font-weight: 400;
   line-height: 2;
 }
+
+@media (min-width: $tablet-width) {
+  .page-main__title,
+  .page-main__desc {
+    font-size: 18px;
+  }
+}

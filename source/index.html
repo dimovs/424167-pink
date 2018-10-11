@@ -13,9 +13,9 @@
         <a class="page-header__logo">
           <img src="img/logo-pink-white-mobile.svg" alt="Pink">
         </a>
-        <nav class="menu page-header__menu">
+        <nav class="menu menu--desc page-header__menu">
           <button class="menu__trigger" type="button">Открыть меню</button>
-          <ul class="menu__list">
+          <ul class="menu__list menu__list--desc">
             <li class="menu__item">
               <a class="menu__link">Главная</a>
             </li>
@@ -67,13 +67,28 @@
             <p class="features__text">Нам есть, что вам предложить!</p>
           </div>
           <dl class="features__list">
-            <dt class="features__title">Поднимает настроение</dt>
-            <dd class="features__desc">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</dd>
-            <dt class="features__title">Меняет мир вокруг</dt>
-            <dd class="features__desc">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</dd>
-            <dt class="features__title">Заводит новых друзей</dt>
-            <dd class="features__desc">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</dd>
+            <div class="features__block features__block--mood">
+              <dt class="features__title">Поднимает настроение</dt>
+              <dd class="features__desc">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</dd>
+            </div>
+            <div class="features__block features__block--world  ">
+              <dt class="features__title">Меняет мир вокруг</dt>
+              <dd class="features__desc">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</dd>
+            </div>
+            <div class="features__block features__block--friends">
+              <dt class="features__title">Заводит новых друзей</dt>
+              <dd class="features__desc">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</dd>
+            </div>
           </dl>
+        </div>
+      </section>
+      <section class="info">
+        <div class="info__inner">
+          <h2 class="info__title">Эффект на 24 часа!</h2>
+          <p class="info__desc">
+            Британские ученые провели иссследования и доказали, что положительный эффект от использования приложения длится целые сутки!
+          </p>
+          <a class="info__link" href="#">Узнать больше об исследовании</a>
         </div>
       </section>
       <section class="reviews">
@@ -81,18 +96,21 @@
         <div class="reviews__inner slider">
           <div class="reviews__list slider__list">
             <blockquote class="reviews__item slider__item">
+              <span class="reviews__author-info">25 лет, водитель трамвая</span>
               <cite class="reviews__author">Николай Петров</cite>
               <p class="reviews__text">
                 Это приложение перевернуло мой мир и позволило по-новому на привычные серые вещи! А еще я познакомился со своей женой в комментариях к выложенной фотографии!
               </p>
             </blockquote>
             <blockquote class="reviews__item slider__item">
+              <span class="reviews__author-info">25 лет, водитель трамвая</span>
               <cite class="reviews__author">Николай Петров</cite>
               <p class="reviews__text">
                 Это приложение перевернуло мой мир и позволило по-новому на привычные серые вещи! А еще я познакомился со своей женой в комментариях к выложенной фотографии!
               </p>
             </blockquote>
             <blockquote class="reviews__item slider__item">
+              <span class="reviews__author-info">25 лет, водитель трамвая</span>
               <cite class="reviews__author">Николай Петров</cite>
               <p class="reviews__text">
                 Это приложение перевернуло мой мир и позволило по-новому на привычные серые вещи! А еще я познакомился со своей женой в комментариях к выложенной фотографии!
@@ -138,7 +156,7 @@
         </div>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer page-footer--index">
       <div class="page-footer__inner">
         <h2 class="page-footer__title">Остались вопросы? Свяжитесь с нами!</h2>
         <section class="contacts page-footer__contacts">
@@ -160,6 +178,38 @@
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1359.8217659282082!2d30.32162426113053!3d59.93916248926954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya+Konyushennaya+Street%2C+19%2F8%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1538159510316" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
           <img src="img/bg-map-mobile@1x.png" alt="Карта" hidden>
         </section>
+      <section>
+        <div class="page-footer__inner">
+        <div class="page-footer__block">
+          <a class="page-footer__logo" href="index.html">
+            <img src="img/logo-pink-blue-mobile.svg" alt="Pink">
+          </a>
+          <ul class="social page-footer__social">
+            <li>
+              <a class="social__link" href="#">
+                <img src="img/icon-twitter.svg" alt="Наш Твиттер">
+              </a>
+            </li>
+            <li>
+              <a class="social__link" href="#">
+                <img src="img/icon-facebook.svg" alt="Наш Facebook">
+              </a>
+            </li>
+            <li>
+              <a class="social__link" href="#">
+                <img src="img/icon-youtube.svg" alt="Наш канал на YouTube">
+              </a>
+            </li>
+          </ul>
+          <p class="copyright page-footer__bottom">
+            Разработано
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+              <img class="copyright__icon" src="img/logo-htmlacademy.svg" alt="HTML Academy">
+            </a>
+          </p>
+        </div>
+      </div>
+      </section>
     </footer>
   </body>
 </html>

@@ -15,3 +15,68 @@
   color: rgb(210, 40, 86);
   text-transform: uppercase;
 }
+
+.selection__pic {
+  &--mobile {
+    display: block;
+  }
+
+  &--tablet {
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .selection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .selection__item {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+
+  .selection__item:first-child {
+    width: 100%;
+  }
+
+  .selection__pic {
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+    }
+
+    &--desktop {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .selection__pic {
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
+  }
+
+  .selection__item {
+    margin-bottom: 50px;
+  }
+}

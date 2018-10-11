@@ -13,3 +13,29 @@
   line-height: 1.8;
   font-weight: 700;
 }
+
+@media (min-width: $desktop-width) {
+  .page-header__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .menu {
+    background-color: transparent;
+  }
+
+  .menu__list {
+    &--desc {
+      display:flex;
+    }
+  }
+
+  .page-header__heading {
+    width: 100%;
+  }
+
+  .menu__trigger {
+    display: none;
+  }
+}

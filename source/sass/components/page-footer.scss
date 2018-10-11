@@ -4,6 +4,12 @@
   text-align: center;
   font-size: 24px;
   font-weight: 300;
+
+  &--index {
+    .page-footer__block {
+      display: none;
+    }
+  }
 }
 
 .page-footer__inner {
@@ -32,4 +38,37 @@
   width: 100%;
   background: rgb(255, 255, 255) url("../img/bg-map-mobile@1x.png") no-repeat;
   background-position: 0 -450px;
+}
+
+@media (min-width: $tablet-width) {
+
+  .page-footer {
+    &--index {
+      .page-footer__block {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__block {
+    padding-top: 40px;
+    padding-bottom: 70px;
+  }
+
+  .page-footer__title {
+    font-size: 50px;
+  }
+
+  .contacts__title {
+    font-size: 18px;
+  }
+
+  .contacts__phone,
+  .contacts__email,
+  .contacts__address {
+    font-size: 24px;
+  }
 }

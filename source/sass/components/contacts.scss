@@ -13,3 +13,21 @@
 .contacts__address {
   color: rgb(210, 40, 86);
 }
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contacts__item {
+    width: 300px;
+    flex-grow: 1;
+  }
+}
+
+@media (min-width: desktop-width) {
+  .contacts {
+    flex-wrap: nowrap;
+  }
+}
