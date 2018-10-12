@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк - Фотографии</title>
     <link rel="stylesheet" href="css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale="1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
     <header class="page-header page-header--no-index">
@@ -40,9 +40,11 @@
         <ul class="selection page-main__list">
           <li class="selection__item">
             <a class="selection__link" href="#">
-              <img class="selection__pic selection__pic--mobile" src="img/panorama-mobile@1x.jpg" alt="Панорама">
-              <img class="selection__pic selection__pic--tablet" src="img/panorama-tablet@1x.jpg" alt="Панорама">
-              <img class="selection__pic selection__pic--desktop" src="img/panorama-desktop@1x.jpg" alt="Панорама">
+              <picture>
+                <source srcset="img/panorama-tablet@1x.jpg" media="(min-width: 660px) and (max-width: 959px)">
+                <source srcset="img/panorama-desktop@1x.jpg" media="(min-width: 960px)">
+                <img class="selection__pic" src="img/panorama-mobile@1x.jpg" alt="Панорама">
+              </picture>
             </a>
             <blockquote>
               <cite class="selection__author">Анна</cite>
@@ -59,9 +61,11 @@
           </li>
           <li class="selection__item">
             <a class="selection__link" href="#">
-              <img class="selection__pic selection__pic--mobile" src="img/photo-car-mobile@1x.jpg" alt="Автомобиль">
-              <img class="selection__pic selection__pic--tablet" src="img/photo-car-tablet@1x.jpg" alt="Автомобиль">
-              <img class="selection__pic selection__pic--desktop" src="img/photo-car-desktop@1x.jpg" alt="Автомобиль">
+              <picture>
+                <source srcset="img/photo-car-tablet@1x.jpg" media="(min-width: 660px) and (max-width: 959px)">
+                <source srcset="img/photo-car-desktop@1x.jpg" media="(min-width: 960px)">
+                <img class="selection__pic" src="img/photo-car-mobile@1x.jpg" alt="Автомобиль">
+              </picture>
             </a>
             <blockquote>
               <cite class="selection__author">Левон</cite>
@@ -78,9 +82,11 @@
           </li>
           <li class="selection__item">
             <a class="selection__link" href="#">
-              <img class="selection__pic selection__pic--mobile" src="img/photo-drumset-mobile@1x.jpg" alt="Барабанная установка">
-              <img class="selection__pic selection__pic--tablet" src="img/photo-drumset-tablet@1x.jpg" alt="Барабанная установка">
-              <img class="selection__pic selection__pic--desktop" src="img/photo-drumset-desktop@1x.jpg" alt="Барабанная установка">
+              <picture>
+                <source srcset="img/photo-drumset-tablet@1x.jpg" media="(min-width: 660px) and (max-width: 959px)">
+                <source srcset="img/photo-drumset-desktop@1x.jpg" media="(min-width: 960px)">
+                <img class="selection__pic" src="img/photo-drumset-mobile@1x.jpg" alt="Барабанная установка">
+              </picture>
             </a>
             <blockquote>
               <cite class="selection__author">Антон</cite>
@@ -97,9 +103,11 @@
           </li>
           <li class="selection__item">
             <a class="selection__link" href="#">
-              <img class="selection__pic selection__pic--mobile" img src="img/photo-window-mobile@1x.jpg" alt="Окна">
-              <img class="selection__pic selection__pic--tablet" img src="img/photo-window-tablet@1x.jpg" alt="Окна">
-              <img class="selection__pic selection__pic--desktop" img src="img/photo-window-desktop@1x.jpg" alt="Окна">
+              <picture>
+                <source srcset="img/photo-window-tablet@1x.jpg" media="(min-width: 660px) and (max-width: 959px)">
+                <source srcset="img/photo-window-desktop@1x.jpg" media="(min-width: 960px)">
+                <img class="selection__pic" img src="img/photo-window-mobile@1x.jpg" alt="Окна">
+              </picture>
             </a>
             <blockquote>
               <cite class="selection__author">Борис</cite>
@@ -116,9 +124,11 @@
           </li>
           <li class="selection__item">
             <a class="selection__link" href="#">
-              <img class="selection__pic selection__pic--mobile" src="img/photo-fair-mobile@1x.jpg" alt="Ярмарка">
-              <img class="selection__pic selection__pic--tablet" src="img/photo-fair-tablet@1x.jpg" alt="Ярмарка">
-              <img class="selection__pic selection__pic--desktop" src="img/photo-fair-desktop@1x.jpg" alt="Ярмарка">
+              <picture>
+                <source srcset="img/photo-fair-tablet@1x.jpg" media="(min-width: 660px) and (max-width: 959px)">
+                <source srcset="img/photo-fair-desktop@1x.jpg" media="(min-width: 960px)">
+                <img class="selection__pic" src="img/photo-fair-mobile@1x.jpg" alt="Ярмарка">
+              </picture>
             </a>
             <blockquote>
               <cite class="selection__author">Сергей</cite>
@@ -135,9 +145,11 @@
           </li>
           <li class="selection__item">
             <a class="selection__link" href="#">
-              <img class="selection__pic selection__pic--mobile" src="img/photo-pov-mobile@1x.jpg" alt="От первого лица">
-              <img class="selection__pic selection__pic--tablet" src="img/photo-pov-tablet@1x.jpg" alt="От первого лица">
-              <img class="selection__pic selection__pic--desktop" src="img/photo-pov-desktop@1x.jpg" alt="От первого лица">
+              <picture>
+                <source srcset="img/photo-pov-tablet@1x.jpg" media="(min-width: 660px) and (max-width: 959px)">
+                <source srcset="img/photo-pov-desktop@1x.jpg" media="(min-width: 960px)">
+                <img class="selection__pic" src="img/photo-pov-mobile@1x.jpg" alt="От первого лица">
+              </picture>
             </a>
             <blockquote>
               <cite class="selection__author">Максим</cite>
@@ -154,9 +166,11 @@
           </li>
           <li class="selection__item">
             <a class="selection__link" href="#">
-              <img class="selection__pic selection__pic--mobile" src="img/photo-wing-mobile@1x.jpg" alt="Крыло самолета">
-              <img class="selection__pic selection__pic--tablet" src="img/photo-wing-tablet@1x.jpg" alt="Крыло самолета">
-              <img class="selection__pic selection__pic--desktop" src="img/photo-wing-desktop@1x.jpg" alt="Крыло самолета">
+              <picture>
+                <source srcset="img/photo-wing-tablet@1x.jpg" media="(min-width: 660px) and (max-width: 959px)">
+                <source srcset="img/photo-wing-desktop@1x.jpg" media="(min-width: 960px)">
+                <img class="selection__pic" src="img/photo-wing-mobile@1x.jpg" alt="Крыло самолета">
+              </picture>
             </a>
             <blockquote>
               <cite class="selection__author">Надежда</cite>

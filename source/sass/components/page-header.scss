@@ -66,4 +66,15 @@
       background-size: 2560px auto;
     }
   }
+
+  .page-header__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+
+  .page-header__heading {
+    width: 100%;
+  }
 }
