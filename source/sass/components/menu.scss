@@ -13,3 +13,19 @@
   line-height: 1.8;
   font-weight: 700;
 }
+
+@media (min-width: $desktop-width) {
+  .menu {
+    background-color: transparent;
+  }
+
+  .menu__list {
+    &--desc {
+      display: flex;
+    }
+  }
+
+  .menu__trigger {
+    display: none;
+  }
+}
