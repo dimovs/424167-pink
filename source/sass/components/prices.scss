@@ -7,14 +7,14 @@
   text-align: center;
   text-transform: uppercase;
 
-    b {
-      font-size: 18px;
-      font-weight: 700;
-    }
+  b {
+    font-size: 18px;
+    font-weight: 700;
+  }
 
-    &--desk {
-      display: none;
-    }
+  &--desk {
+    display: none;
+  }
 }
 
 .prices__feature {
@@ -55,9 +55,9 @@
   }
 
   .prices__text {
-   &--desk {
-    display: none;
-   }
+    &--desk {
+      display: none;
+    }
   }
 }
 
