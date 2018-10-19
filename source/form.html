@@ -7,34 +7,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <header class="page-header page-header--no-index">
+    <header class="page-header">
       <div class="page-header__inner">
-        <a class="page-header__logo">
-          <img src="img/logo-pink-white-mobile.svg" alt="Pink">
-        </a>
-        <nav class="menu menu--desc page-header__menu">
-          <button class="menu__trigger" type="button">Открыть меню</button>
-          <ul class="menu__list menu__list--desc">
-            <li class="menu__item">
-              <a class="menu__link" href="index.html">Главная</a>
+        <!-- <nav class="page-header__menu page-header__menu--opened">
+          <a class="page-header__logo">
+            <picture>
+              <source media="(min-width: 660px) and (max-width: 959px)" srcset="img/logo-pink-white-tablet.svg">
+              <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+              <img src="img/logo-pink-white-mobile.svg" alt="Pink">
+            </picture>
+          </a>
+          <button class="page-header__trigger" type="button"><span class="hidden">Открыть меню</span></button>
+          <ul class="page-header__menu-list">
+            <li class="page-header__menu-item">
+              <a class="page-header__menu-link"  href="index.html">Главная</a>
             </li>
-            <li class="menu__item">
-              <a class="menu__link" href="photo.html">Фотографии</a>
+            <li class="page-header__menu-item">
+              <a class="page-header__menu-link" href="photo.html">Фотографии</a>
             </li>
-            <li class="menu__item">
-              <a class="menu__link">Конкурс</a>
+            <li class="page-header__menu-item">
+              <a class="page-header__menu-link">Конкурс</a>
             </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">HTML Academy</a>
+            <li class="page-header__menu-item">
+              <a class="page-header__menu-link" href="#">HTML Academy</a>
             </li>
           </ul>
-        </nav>
+        </nav> -->
         <h1 class="page-header__heading">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
     </header>
     <main class="page-main">
       <div class="page-main__inner">
-        <p class="page-main__desc">
+        <p class="page-main__title page-main__title--form">
           Поделитесь своей историей и получите шанс выиграть ценный приз &mdash; 1000 миль на вашу бонусную карту!
         </p>
         <form class="form" method="post" action="https://echo.htmlacademy.ru">
@@ -55,31 +59,31 @@
               <input class="form__field" id="middle-name" type="text" name="middle-name" placeholder="Ну и отчество тоже">
             </div>
           </fieldset>
-          <fieldset class="form__block form__block--bgc-even">
-            <legend class="form__title form__title--align-c">
+          <fieldset class="form__block form__block--achievements form__block--bgc-even">
+            <legend class="form__title form__title--legend">
               Ваши безбашенные достижения в путешествии
             </legend>
-            <div class="form__item">
+            <div class="form__item form__item--achievements">
               <input id="selfie-shark" type="checkbox" name="achievements" value="selfie-shark">
               <label for="selfie-shark">Сделал селфи с акулой</label>
             </div>
-            <div class="form__item">
+            <div class="form__item form__item--achievements">
               <input id="sunburn" type="checkbox" name="achievements" value="sunburn">
               <label for="sunburn">Обгорел на пляже</label>
             </div>
-            <div class="form__item">
+            <div class="form__item form__item--achievements">
               <input id="chuck-norris" type="checkbox" name="achievements" value="chuck-norris">
               <label for="chuck-norris">Видел Чака Норриса</label>
             </div>
-            <div class="form__item">
+            <div class="form__item form__item--achievements">
               <input id="souvenirs" type="checkbox" name="achievements" value="souvenirs">
               <label for="souvenirs">Накупил сувениров</label>
             </div>
-            <div class="form__item">
+            <div class="form__item form__item--achievements">
               <input id="stayed-calm" type="checkbox" name="achievements" value="stayed-calm">
               <label for="stayed-calm">Удержал башню</label>
             </div>
-            <div class="form__item">
+            <div class="form__item form__item--achievements">
               <input id="ruined-hotel" type="checkbox" name="achievements" value="ruined-hotel">
               <label for="ruined-hotel">Разгромил отель</label>
             </div>
@@ -98,24 +102,24 @@
             </div>
           </fieldset>
           <fieldset class="form__block form__block--app form__block--bgc-even">
-            <legend class="form__title form__title--align-c">
+            <legend class="form__title form__title--legend">
               С каким приложением путешествовали?
             </legend>
-            <div class="form__item">
+            <div class="form__item form__item--app">
               <input id="ios" type="radio" name="system" value="ios" checked>
               <label for="ios">Pink для iOS</label>
             </div>
-            <div class="form__item">
+            <div class="form__item form__item--app">
               <input id="android" type="radio" name="system" value="android">
               <label for="android">Pink на Android</label>
             </div>
-            <div class="form__item">
+            <div class="form__item form__item--app">
               <input id="windows" type="radio" name="system" value="windows">
               <label for="windows">Windows Phone</label>
             </div>
           </fieldset>
-          <div class="form__block form__block--bgc-odd">
-            <label class="form__title form__title--align-c" for="desc">
+          <div class="form__block form__block--desc form__block--bgc-odd">
+            <label class="form__title" for="desc">
             Опишите свои эмоции
             </label>
             <textarea class="form__field" id="desc" rows="5" name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях">

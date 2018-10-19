@@ -12,6 +12,14 @@
 .contacts__email,
 .contacts__address {
   color: rgb(210, 40, 86);
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.25;
+}
+
+.contacts__item {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -22,12 +30,17 @@
 
   .contacts__item {
     width: 300px;
-    flex-grow: 1;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
-@media (min-width: desktop-width) {
+@media (min-width: $desktop-width) {
   .contacts {
-    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .contacts__item:nth-child(2) {
+    order: 1;
   }
 }

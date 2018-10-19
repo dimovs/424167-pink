@@ -9,6 +9,7 @@ html {
 }
 
 body {
+  position: relative;
   margin: 0;
   color: rgb(40, 54, 69);
   font-family: "Open Sans", "arial", sans-serif;
@@ -30,6 +31,8 @@ button,
 input,
 textarea {
   font-family: inherit;
+  font-size: inherit;
+  color: inherit;
   margin: 0;
 }
 

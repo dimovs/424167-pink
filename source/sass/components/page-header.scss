@@ -1,80 +1,157 @@
 .page-header {
+  position: relative;
+  height: 237px;
+  background-size: cover;
+  background-position: center top;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+}
+
+.page-header--index {
   height: 462px;
-  color: rgb(255, 255, 255);
-  background-color: rgb(40, 54, 69);
   background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-size: 258px auto, 320px auto;
-  background-position: 0 bottom, 0 0;
-
-  &--no-index {
-    height: 240px;
-    background-image: url("../img/bg-back-mobile@1x.jpg");
-    background-position: 0 0;
-    background-size: 320px auto;
-  }
+  background-position: left bottom, center top;
+  background-size: 258px 286px, cover;
 }
 
 .page-header__inner {
   padding-left: 20px;
   padding-right: 20px;
-  margin: 0 auto;
 }
 
 .page-header__heading {
+  color: rgb(255, 255, 255);
   font-size: 24px;
   font-weight: 300;
+  line-height: 1.25;
   text-align: center;
-  padding: 0 20px;
-  margin-top: 50px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-@media (min-width: $tablet-width) {
+.page-header__menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(40, 54, 69);
+  min-height: 66px;
+}
+
+.page-header__menu-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.77;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.page-header__menu-link {
+  display: block;
+  padding: 20px 0;
+  border-top: 1px solid rgb(72, 84, 97);
+  border-bottom: 1px solid rgb(0, 0, 1);
+}
+
+.page-header__logo {
+  display: block;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgb(0, 0, 1);
+}
+
+// .page-header__trigger {
+//   position: absolute;
+//   display: block;
+//   right: 20px;
+//   top: 20px;
+//   height: 25px;
+//   width: 50px;
+//   cursor: pointer;
+//   border: none;
+//   background-color: rgb(40, 54, 69);
+// }
+
+// .page-header__menu--nojs .page-header__trigger {
+//   display: none;
+// }
+
+// .page-header__menu--closed {
+//   background-color: rgba(0, 0, 0, 0.3);
+// }
+
+// .page-header__menu--closed .page-header__logo {
+//   border-bottom: none;
+// }
+
+// .page-header__menu--closed .page-header__trigger {
+//   background-image: url("img/icon-menu-burger.svg");
+//   background-repeat: no-repeat;
+//   background-color: rgba(0, 0, 0, 0.3);
+// }
+
+// .page-header__menu--opened .page-header__trigger {
+//   background-image: url("img/icon-menu-cross.svg");
+//   background-repeat: no-repeat;
+//   height: 30px;
+//   width: 30px;
+// }
+
+// .page-header__menu--closed .page-header__menu-list {
+//   display: none;
+// }
+
+
+@media (min-width: 660px) {
   .page-header {
+    height: 440px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-size: 1200px 729px;
+  }
+
+  .page-header--index {
     height: 729px;
     background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
-    background-repeat: no-repeat;
-    background-size: 700px auto, 1200px auto;
-    background-position: right -20px bottom -5px, center;
-
-    &--no-index {
-      height: 440px;
-      background-image: url("../img/bg-back-tablet@1x.jpg");
-      background-position: center;
-      background-size: 1200px auto;
-    }
+    background-size: 700px 545px, 1200px 729px;
+    background-position: -20px bottom, center top;
   }
 
   .page-header__heading {
     font-size: 50px;
-    maargin-top: 100px;
+    line-height: 1.2;
+    // margin-top: 190px;
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: 960px) {
   .page-header {
+    height: 395px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-size: 2560px 853px;
+  }
+
+  .page-header--index {
     height: 853px;
     background-image: url("../img/iphone-hand-desktop@1x.png"), url("../img/bg-back-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-size: 1050px auto, 2560px auto;
-    background-position: right -100px bottom -5px, center;
-
-    &--no-index {
-      height: 400px;
-      background-image: url("../img/bg-back-desktop@1x.jpg");
-      background-position: center;
-      background-size: 2560px auto;
-    }
+    background-size: 1050px 645px, 2560px 853px;
+    background-position: 20px bottom, center top;
   }
 
   .page-header__inner {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 960px;
+    margin: 0 auto;
   }
 
-
   .page-header__heading {
-    width: 100%;
+    // margin-top: 180px;
   }
 }

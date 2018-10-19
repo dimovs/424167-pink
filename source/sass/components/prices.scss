@@ -1,36 +1,122 @@
+.prices {
+  background-color: rgb(242, 242, 242);
+  overflow-x: hidden;
+  padding-top: 90px;
+  padding-bottom: 40px;
+}
+
+.prices__list {
+  table-layout: fixed;
+  border-collapse: collapse;
+  margin-bottom: 40px;
+  transform: translateX(-260px);
+}
+
+.prices__list th:first-child {
+  display: none;
+}
+
 .prices__rate {
-  min-height: 100px;
+  position: relative;
+  padding: 15px 40px;
   background-color: rgb(40, 54, 69);
-  font-size: 24px;
-  font-weight: 300;
+  border: 2px solid rgb(229, 229, 229);
   color: rgb(255, 255, 255);
-  text-align: center;
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 300;
   text-transform: uppercase;
+  min-width: 280px;
+}
 
-  b {
-    font-size: 18px;
-    font-weight: 700;
-  }
+.prices__rate b {
+  font-size: 18px;
+  line-height: 1.66;
+  font-weight: 700;
+}
 
-  &--desk {
-    display: none;
-  }
+.prices__rate--hit {
+  overflow: hidden;
+}
+
+.prices__rate--hit span {
+  font-size: 14px;
+  position: absolute;
+  width: 120px;
+  line-height: 30px;
+  height: 30px;
+  left: -30px;
+  top: 10px;
+  background-color: rgb(210, 40, 86);
+  background-repeat: no-repeat;
+  transform: rotate(-45deg);
 }
 
 .prices__feature {
-  min-height: 60px;
-  font-weight: 400;
+  position: relative;
+  padding: 10px 60px 10px 15px;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(229, 229, 229);
   text-transform: uppercase;
-
-  &--desk {
-    display: none;
-  }
 }
 
-@media (min-width: $tablet-width) {
-  .prices__list {
-    width: 620px;
-    margin: 0 auto;
+td.prices__feature::after {
+  content: "";
+  position: absolute;
+  right: 15px;
+  top: calc(50% - 15px);
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.prices__feature--yes::after {
+  background-image: url("../img/icon-yes.svg");
+}
+
+.prices__feature--no::after {
+  background-image: url("../img/icon-no.svg");
+}
+
+.prices__toggles,
+.reviews__toggles {
+  text-align: center;
+  line-height: 0;
+}
+
+.toggle {
+  display: inline-block;
+  border: 3px solid rgb(242, 242, 242);
+  border-radius: 50%;
+  outline: none;
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  font-size: 0;
+  background-color: rgb(190, 194, 199);
+  cursor: pointer;
+}
+
+.toggle:hover {
+  background-color: rgb(126, 134, 143);
+}
+
+.toggle:active {
+  background-color: rgb(233, 235, 236);
+}
+
+.toggle--active,
+.toggle--active:hover {
+  border: 3px solid rgb(40, 54, 69);
+  background-color: rgb(255, 255, 255);
+}
+
+
+@media (min-width: 660px) {
+  .prices {
+    padding-bottom: 70px;
   }
 
   .prices__inner {
@@ -38,40 +124,76 @@
     padding-right: 20px;
   }
 
-  .prices__rate {
-    min-height: 80px;
+  .prices__list {
+    width: 100%;
+    margin-bottom: 0;
+    transform: none;
+  }
 
-    &--desk {
-      display: table-cell;
-    }
+  .prices__list th:first-child {
+    display: table-cell;
+  }
+
+  .prices__rate {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 18px;
+    line-height: 1.66;
+    min-width: auto;
+  }
+
+  .prices__rate b {
+    font-size: 16px;
+    line-height: 1.875;
   }
 
   .prices__feature {
-    min-height: 50px;
-
-    &--desk {
-      display: table-cell;
-    }
+    padding-right: 15px;
+    font-size: 0;
   }
 
-  .prices__text {
-    &--desk {
-      display: none;
-    }
+  th.prices__feature {
+    text-transform: none;
+    font-weight: 400;
+    text-align: left;
+    font-size: 14px;
+    line-height: 2.14;
+  }
+
+  td.prices__feature::after {
+    right: calc(50% - 15px);
+  }
+
+  .prices__toggles {
+    display: none;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .prices__list {
-    width: 940px;
+@media (min-width: 960px) {
+  .prices {
+    padding-top: 145px;
+    padding-bottom: 95px;
   }
 
   .prices__inner {
+    width: 960px;
     padding-left: 10px;
     padding-right: 10px;
+    margin: 0 auto;
   }
 
   .prices__rate {
-    min-height: 100px;
+    font-size: 24px;
+    line-height: 1.25;
+  }
+
+  .prices__rate b {
+    font-size: 18px;
+    line-height: 1.66;
+  }
+
+  th.prices__feature {
+    font-size: 18px;
+    line-height: 1.66;
   }
 }

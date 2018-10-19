@@ -1,15 +1,17 @@
-.form__field {
-  width: 100%;
-  padding: 20px 25px;
-  border: 2px solid rgb(229, 229, 229);
-  font-size: 14px;
-  line-height: 2;
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .form__block {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
-  padding: 35px 0 45px 0;
+  padding: 0;
   border: none;
+  padding-bottom: 40px;
 
   &--bgc-even {
     background-color: rgb(242, 242, 242);
@@ -18,31 +20,137 @@
   &--bgc-odd {
     background-color: rgb(255, 255, 255);
   }
+
+  &--contacts {
+    padding-top: 35px;
+  }
+
+  &--subm {
+    display: flex;
+    flex-wrap: wrap;
+
+    .form__item {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  outline: 2px solid green;
+}
+
+.form__item {
+  margin-bottom: 35px;
+  font-size: 18px;
+  line-height: 1.25;
+  font-weight: 400;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--personal {
+    margin-bottom: 20px;
+  }
+
+  &--app {
+    label {
+      position: relative;
+      cursor: pointer;
+      padding-left: 70px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border: 2px solid rgb(229, 229, 229);
+        border-radius: 50%;
+        left: 0;
+        top: calc(50% - 20px);
+        background-color: rgb(255, 255, 255);
+        z-index: 1;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        left: 12px;
+        top: 5px;
+        background-color: rgb(210, 40, 86);
+        z-index: 0;
+        // display: none;
+      }
+    }
+
+    input[type="radio"] {
+      display: none;
+
+      &:checked ~ label::after {
+        z-index: 2;
+      }
+    }
+  }
+
+  &--achievements {
+    label {
+      position: relative;
+      cursor: pointer;
+      padding-left: 50px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border: 2px solid rgb(229, 229, 229);
+        left: 0;
+        top: calc(50% - 20px);
+        background-color: rgb(255, 255, 255);
+        z-index: 1;
+      }
+    }
+
+    input[type="checkbox"] {
+      display: none;
+
+      &:checked ~ label::before {
+        background-image: url("../img/icon-yes.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+  }
+}
+
+.form__field {
+  width: 100%;
+  padding: 20px 25px;
+  border: 2px solid rgb(229, 229, 229);
+  font-size: 18px;
+  line-height: 1;
 }
 
 .form__title {
   display: inline-block;
-  width: 100%;
   font-size: 14px;
   color: rgb(210, 40, 86);
   padding-left: 25px;
   text-transform: uppercase;
+  line-height: 1.25;
+
+  &--legend {
+    text-align: center;
+    padding: 30px 0 30px;
+    background-color: rgb(242, 242, 242);
+    display: block;
+    width: 100%;
+  }
 
   &--align-c {
     text-align: center;
-    padding: 0;
-  }
-}
-
-.form__item {
-  &--condition {
-    text-align: center;
-    text-transform: uppercase;
-  }
-
-  &-condition::before {
-    content: "*";
-    color: rgb(210, 40, 86);
   }
 }
 
@@ -62,8 +170,15 @@
 @media (min-width: $tablet-width) {
   .form__block {
     &--subm {
-      display: flex;
       justify-content: space-between;
+
+      .form__item {
+        width: 300px;
+
+        &--condition {
+          text-align: right;
+        }
+      }
     }
 
     &--bgc-even {

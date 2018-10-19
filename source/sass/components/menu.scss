@@ -1,8 +1,10 @@
 .menu {
+  position: relative;
   background-color: rgb(40, 54, 69);
+  width: 320px;
   text-align: center;
   font-size: 18px;
-  margin: 0 -20px;
+  margin: 0 auto;
 }
 
 .menu__link {
@@ -13,6 +15,23 @@
   line-height: 1.8;
   font-weight: 700;
 }
+
+.menu__trigger {
+  display: block;
+  width: 50px;
+  height: 27px;
+
+  background-color: #6a4d38;
+
+  cursor: pointer;
+  border: none;
+
+  &:hover,
+  &:active {
+    background-color: red;
+  }
+}
+
 
 @media (min-width: $desktop-width) {
   .menu {

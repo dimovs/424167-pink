@@ -1,39 +1,68 @@
 .reviews {
-  text-align: center;
   background-color: rgb(255, 255, 255);
+  padding-top: 50px;
+  padding-bottom: 40px;
 }
+
 
 .reviews__inner {
   padding-left: 20px;
   padding-right: 20px;
-  margin: 0 auto;
 }
 
 .reviews__list {
-  padding: 35px 0;
+  margin-bottom: 40px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
 }
 
-.reviews__author {
-  margin-bottom: 25px;
-  font-style: normal;
-  font-size: 18px;
-  line-height: 1.6;
-  font-weight: 700;
-  color: rgb(0, 0, 0);
-}
-
-.reviews__text {
-  font-weight: 400;
-  line-height: 2;
+.reviews__item {
+  min-width: 100%;
+  margin: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
 
 .reviews__author-info {
   display: none;
 }
 
-@media (min-width: $tablet-width) {
+.reviews__author {
+  margin-bottom: 25px;
+  font-size: 18px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.66;
+  color: rgb(0, 0, 0);
+}
+
+.reviews__text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.reviews__toggles {
+  text-align: center;
+}
+
+.toggle {
+  display: inline-block;
+  margin-right: 10px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 660px) {
+  .reviews {
+    padding-bottom: 20px;
+  }
+
   .reviews__item {
-    display: flex;
     flex-direction: column-reverse;
   }
 
@@ -41,16 +70,68 @@
     display: block;
   }
 
-  .reviews__list {
-    padding: 0;
+  .reviews__author {
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+
+  .reviews__text {
+    font-size: 18px;
+    line-height: 1.66;
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: 960px) {
+  .reviews__inner {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 960px;
+    margin: 0 auto;
+  }
+
   .reviews__item {
-    padding-top: 180px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .reviews__author {
+    font-size: 24px;
+  }
+
+  .reviews__author-info {
+    font-size: 18px;
+  }
+
+  .reviews__toggles {
+    display: none;
+  }
+
+  .reviews__list {
+    margin-bottom: 0;
+    padding-top: 120px;
     background-image: url("../img/icon-quotes.svg");
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position: center top;
+    background-size: 80px 65px;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 24px;
+      height: 42px;
+      cursor: pointer;
+      top: calc(50% - 12px);
+    }
+
+    &::before {
+      left: 0;
+      background: url("../img/icon-review-arrow-left.svg") no-repeat;
+    }
+
+    &::after {
+      right: 0;
+      background: url("../img/icon-review-arrow-right.svg") no-repeat;
+    }
   }
 }
