@@ -57,8 +57,10 @@
   }
 
   .page-footer__map {
-    background: rgb(255, 255, 255) url("../img/bg-map-tablet@1x.jpg") no-repeat;
-    background-position: 0 -450px;
+    height: 375px;
+    background-image: url("../img/icon-map-marker.svg"), url("../img/bg-map-tablet@1x.jpg");
+    background-position: bottom 10% right 35%, top center;
+    background-size: auto;
   }
 }
 
@@ -83,7 +85,8 @@
   }
 
   .page-footer__map {
-    background: rgb(255, 255, 255) url("../img/bg-map-desktop@1x.jpg") no-repeat;
-    background-position: 0 -450px;
+    height: 500px;
+    background-image: url("../img/icon-map-marker.svg"), url("../img/bg-map-desktop@1x.jpg");
+    background-position: bottom 35% right 40%, top center;
   }
 }
