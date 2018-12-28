@@ -34,10 +34,16 @@
 }
 
 .page-footer__map {
-  min-height: 200px;
+  height: 200px;
+  background-image: url("../img/icon-map-marker.svg"), url("../img/bg-map-mobile@1x.png");
+  background-position: top 50% right 20%, center;
+  background-repeat: no-repeat;
+  background-size: auto, 100% auto;
+}
+
+.page-footer__map iframe {
   width: 100%;
-  background: rgb(255, 255, 255) url("../img/bg-map-mobile@1x.png") no-repeat;
-  background-position: 0 -450px;
+  height: 100%;
 }
 
 @media (min-width: $tablet-width) {
