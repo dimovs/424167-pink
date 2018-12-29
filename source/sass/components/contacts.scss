@@ -14,13 +14,6 @@
   color: rgb(40, 54, 69);
 }
 
-.contacts__data {
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 1.2;
-  color: rgb(210, 40, 86);
-}
-
 .contacts__container {
   display: flex;
   flex-direction: column;
@@ -30,6 +23,26 @@
   margin-top: 0;
   margin-bottom: 10px;
   text-align: center;
+}
+
+.contacts__data {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.2;
+  color: rgb(210, 40, 86);
+
+  &--email, &--phone {
+    text-decoration: none;
+  }
+
+  &--email:hover {
+    color: rgb(40, 54, 69);
+    text-decoration: underline;
+  }
+
+  &--email:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
