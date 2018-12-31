@@ -1,56 +1,112 @@
 .reviews {
-  text-align: center;
   background-color: rgb(255, 255, 255);
+  padding-top: 50px;
 }
 
 .reviews__inner {
   padding-left: 20px;
   padding-right: 20px;
-  margin: 0 auto;
 }
 
 .reviews__list {
-  padding: 35px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+}
+
+.reviews__item {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 20px;
+  margin-left: 0;
+  min-width: 280px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .reviews__author {
   margin-bottom: 25px;
   font-style: normal;
   font-size: 18px;
-  line-height: 1.6;
+  line-height: 1.66;
   font-weight: 700;
   color: rgb(0, 0, 0);
-}
-
-.reviews__text {
-  font-weight: 400;
-  line-height: 2;
 }
 
 .reviews__author-info {
   display: none;
 }
 
+.reviews__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 2;
+  color: rgb(40, 54, 69);
+  text-align: center;
+}
+
+.reviews__toggles {
+  padding-top: 65px;
+  padding-bottom: 40px;
+}
+
 @media (min-width: $tablet-width) {
   .reviews__item {
     display: flex;
     flex-direction: column-reverse;
+    justify-content: flex-end;
+    min-width: 620px;
+  }
+
+  .reviews__author {
+    margin-bottom: 0;
   }
 
   .reviews__author-info {
     display: block;
+    font-size: 14px;
+    line-height: 2;
+    font-weight: 400;
+    color: rgb(40, 54, 69);
   }
 
-  .reviews__list {
-    padding: 0;
+  .reviews__text {
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 1.66;
+  }
+
+  .reviews__toggles {
+    padding-top: 40px;
+    padding-bottom: 20px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .reviews__inner {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+    max-width: 960px;
+  }
+
   .reviews__item {
-    padding-top: 180px;
-    background-image: url("../img/icon-quotes.svg");
-    background-repeat: no-repeat;
-    background-position: top center;
+    min-width: 940px;
+  }
+
+  .reviews__author {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+
+  .reviews__author-info {
+    font-size: 18px;
+    line-height: 1.66;
   }
 }
