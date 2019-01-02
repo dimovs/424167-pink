@@ -9,48 +9,54 @@
   <body>
     <header class="page-header">
       <h1 class="hidden">Pink - мобильное приложение для раскрашивания серых будней в розовый цвет</h1>
-      <div class="page-header__inner">
-        <a class="page-header__logo">
-          <img src="img/logo-pink-white-mobile.svg" alt="Pink">
-        </a>
-        <nav class="menu menu--desc page-header__menu">
-          <button class="menu__trigger" type="button">Открыть меню</button>
-          <ul class="menu__list menu__list--desc">
-            <li class="menu__item">
-              <a class="menu__link">Главная</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="photo.html">Фотографии</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="form.html">Конкурс</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">HTML Academy</a>
-            </li>
-          </ul>
+        <nav class="menu menu--opened menu--nojs">
+          <div class="menu__container">
+            <a class="page-header__logo menu__logo">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                <img src="img/logo-pink-white-mobile.svg" alt="Pink">
+              </picture>
+            </a>
+            <button class="menu__trigger" type="button"><span class="hidden">Открыть меню</span></button>
+            <ul class="menu__list">
+              <li class="menu__item menu__item--active">
+                <a class="menu__link">Главная</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Фотографии</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Конкурс</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
-    </header>
-    <main>
-      <section class="downloads">
+      <div class="page-header__top">
+      </div>
+      <section class="downloads page-header__downloads">
         <h2 class="hidden">Варианты скачивания приложения</h2>
         <div class="downloads__inner">
+          <span class="downloads__moto">Взгляните на жизнь иначе!</span>
           <a class="downloads__default-link" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
           <ul class="downloads__links">
-            <li>
+            <li class="downloads__item">
               <a class="downloads__link downloads__link--apple" href="https://www.apple.com/ru/itunes/" target="_blank" title="Apple iTunes">
-                <img src="img/logo-apple.svg" alt="Apple Store">
+                <img src="img/logo-apple.svg" width="46" height="56" alt="Apple Store">
               </a>
             </li>
-            <li>
+            <li class="downloads__item">
               <a class="downloads__link downloads__link--google" href="https://play.google.com/store/apps" target="_blank" title="Google Play">
-                <img src="img/logo-android.svg" alt="Google Play Market">
+                <img src="img/logo-android.svg" width="42" height="47" alt="Google Play Market">
               </a>
             </li>
-            <li>
+            <li class="downloads__item">
               <a class="downloads__link downloads__link--microsoft" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone" target="_blank" title="Microsoft Store">
-                <img src="img/logo-microsoft.svg" alt="Microsoft Store">
+                <img src="img/logo-microsoft.svg" width="44" height="42" alt="Microsoft Store">
               </a>
             </li>
           </ul>
@@ -59,6 +65,8 @@
           </p>
         </div>
       </section>
+    </header>
+    <main>
       <section class="features">
         <h2 class="hidden">Отличительные особенности приложения</h2>
         <div class="features__intro">
@@ -131,8 +139,8 @@
         </div>
       </section>
       <section class="prices">
-        <div class="prices__inner slider">
-          <table class="prices__list slider__list">
+        <div class="prices__inner">
+          <table class="prices__list">
             <tr>
               <th></th>
               <th class="prices__rate"><b>База</b><br>1,99 USD</th>
@@ -173,11 +181,11 @@
           <div class="contacts__container">
             <p class="contacts__item contacts__item--phone">
               <span class="contacts__title">Звоните:</span><br>
-              <a class="contacts__data" href="tel:+78125556666">+7 (812) 555-66-66</a>
+              <a class="contacts__data contacts__data--phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
             </p>
             <p class="contacts__item contacts__item--email">
               <span class="contacts__title">Пишите:</span><br>
-              <a class="contacts__data" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+              <a class="contacts__data contacts__data--email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </p>
             <p class="contacts__item contacts__item--address">
               <span class="contacts__title">Приезжайте в гости:</span><br>
@@ -191,38 +199,59 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1359.8217659282082!2d30.32162426113053!3d59.93916248926954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya+Konyushennaya+Street%2C+19%2F8%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1538159510316" frameborder="0" allowfullscreen></iframe>
       </section>
 
-      <section>
-        <div class="page-footer__inner">
-          <div class="page-footer__block">
-            <a class="page-footer__logo" href="index.html">
+      <div class="page-footer__inner">
+        <div class="page-footer__social">
+          <a class="page-footer__logo" href="index.html">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
               <img src="img/logo-pink-blue-mobile.svg" alt="Pink">
-            </a>
-            <ul class="social page-footer__social">
-              <li>
-                <a class="social__link" href="#">
-                  <img src="img/icon-twitter.svg" alt="Наш Твиттер">
-                </a>
-              </li>
-              <li>
-                <a class="social__link" href="#">
-                  <img src="img/icon-facebook.svg" alt="Наш Facebook">
-                </a>
-              </li>
-              <li>
-                <a class="social__link" href="#">
-                  <img src="img/icon-youtube.svg" alt="Наш канал на YouTube">
-                </a>
-              </li>
-            </ul>
-            <p class="copyright page-footer__bottom">
-              Разработано
-              <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-                <img class="copyright__icon" src="img/logo-htmlacademy.svg" alt="HTML Academy">
+            </picture>
+          </a>
+          <ul class="social-links page-footer__social-links">
+            <li>
+              <a class="social-links__link" href="#">
+                <span class="hidden">Наша страница на Twitter</span>
+                <img src="img/icon-twitter.svg" alt="Наш Твиттер">
               </a>
-            </p>
-          </div>
+            </li>
+            <li>
+              <a class="social-links__link" href="#">
+                <span class="hidden">Наша страница на Facebook</span>
+                <img src="img/icon-facebook.svg" alt="Наш Facebook">
+              </a>
+            </li>
+            <li>
+              <a class="social-links__link" href="#">
+                <span class="hidden">Наша страница на YouTube</span>
+                <img src="img/icon-youtube.svg" alt="Наш канал на YouTube">
+              </a>
+            </li>
+          </ul>
+          <p class="page-footer__copyright">
+            Разработано
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+              <img class="copyright__icon" src="img/logo-htmlacademy.svg" alt="HTML Academy">
+            </a>
+          </p>
         </div>
-      </section>
+      </div>
     </footer>
+    <script>
+      let navMain = document.querySelector('.menu');
+      let navTrigger = document.querySelector('.menu__trigger');
+
+      navMain.classList.remove('menu--nojs');
+      navMain.classList.replace('menu--opened', 'menu--closed');
+
+      navTrigger.addEventListener('click', function() {
+        if (navMain.classList.contains('menu--closed')) {
+          navMain.classList.remove('menu--closed');
+          navMain.classList.add('menu--opened');
+        } else {
+          navMain.classList.add('menu--closed');
+          navMain.classList.remove('menu--opened');
+        }
+      });
+    </script>
   </body>
 </html>
