@@ -3,8 +3,8 @@
   background-color: rgb(255, 255, 255);
 
   &--index {
-    .page-footer__block {
-      display: none;
+    .page-footer__social {
+      // display: none;
     }
   }
 }
@@ -14,7 +14,33 @@
   padding-right: 20px;
 }
 
+.page-footer__social {
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+}
+
+.page-footer__logo {
+  outline: 1px solid blue;
+}
+
+.page-footer__social-links {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.page-footer__copyright {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.28;
+  color: rgb(40, 54, 69);
+  outline: 1px solid green;
+}
+
 .page-footer__map {
+  position: relative;
   height: 200px;
   background-image: url("../img/icon-map-marker.svg"), url("../img/bg-map-mobile@1x.png");
   background-position: top 50% right 20%, center;
@@ -22,14 +48,19 @@
   background-size: auto, 100% auto;
 }
 
+.page-footer__map::before {
+  position: absolute;
+  content: "";
+  top: -1px;
+  width: 100%;
+  border-top: 35px solid rgb(255, 255, 255);
+  border-left: 50vw solid transparent;
+  border-right: 50vw solid transparent;
+}
+
 .page-footer__map iframe {
   width: 100%;
   height: 100%;
-}
-
-.page-footer__social,
-.page-footer__bottom {
-  margin-top: 40px;
 }
 
 @media (min-width: $tablet-width) {
@@ -37,9 +68,8 @@
     padding-top: 50px;
 
     &--index {
-      .page-footer__block {
-        display: flex;
-        justify-content: space-between;
+      .page-footer__social {
+        // display: block;
       }
     }
   }
@@ -50,30 +80,27 @@
     background-position: bottom 10% right 35%, top center;
     background-size: auto;
   }
+
+  .page-footer__map::before {
+    border-top-width: 65px;
+  }
+
+  .page-footer__social {
+    padding-top: 35px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .page-footer__social-links {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .page-footer {
     padding-top: 70px;
-  }
-
-  .page-footer__block {
-    padding-top: 40px;
-    padding-bottom: 70px;
-  }
-
-  .page-footer__title {
-    font-size: 50px;
-  }
-
-  .contacts__title {
-    font-size: 18px;
-  }
-
-  .contacts__phone,
-  .contacts__email,
-  .contacts__address {
-    font-size: 24px;
   }
 
   .page-footer__inner {
@@ -85,5 +112,13 @@
     height: 500px;
     background-image: url("../img/icon-map-marker.svg"), url("../img/bg-map-desktop@1x.jpg");
     background-position: bottom 35% right 40%, top center;
+  }
+
+  .page-footer__map::before {
+    border-top-width: 105px;
+  }
+
+  .page-footer__social {
+    padding-top: 60px;
   }
 }
