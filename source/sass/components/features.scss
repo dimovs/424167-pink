@@ -24,9 +24,19 @@
 }
 
 .features__list {
+  position: relative;
   background-color: rgb(242, 242, 242);
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.features__list::before {
+  position: absolute;
+  content: "";
+  top: -1px;
+  width: 100%;
+  border-top: 17px solid rgb(255, 255, 255);
+  border-right: 100vw solid transparent;
 }
 
 .features__container {
@@ -38,6 +48,7 @@
   background-repeat: no-repeat;
   background-position: center bottom -40px;
   background-size: 157px 320px;
+  padding-top: 80px;
 }
 
 
@@ -77,13 +88,19 @@
     margin-bottom: 0;
   }
 
+  .features__list::before {
+    border-top-width: 25px;
+  }
+
   .features__container {
+    position: relative;
     align-items: flex-end;
-    padding-bottom: 0;
+    padding-bottom: 45px;
     background-image: url("../img/iphone-screen-1-tablet@1x.png");
     background-repeat: no-repeat;
-    background-position: left center;
+    background-position: left bottom;
     background-size: 268px 481px;
+    min-height: 487px;
   }
 
   .features__block {
@@ -109,7 +126,12 @@
     font-size: 50px;
   }
 
+  .features__list::before {
+    border-top-width: 45px;
+  }
+
   .features__container {
+    padding-top: 0;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -120,6 +142,8 @@
   .features__block {
     text-align: center;
     padding-top: 355px;
+    padding-left: 20px;
+    padding-right: 20px;
     width: 300px;
     margin-bottom: 0;
     background-size: 292px 302px;
