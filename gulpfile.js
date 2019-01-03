@@ -10,6 +10,7 @@ let csso = require("gulp-csso");
 let rename = require("gulp-rename");
 let del = require("del");
 let imagemin = require("gulp-imagemin");
+let svgstore = require("gulp-svgstore");
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -33,6 +34,15 @@ gulp.task("images", function() {
     imagemin.svgo()
   ]))
   .pipe(gulp.dest("source/img"))
+})
+
+gulp.task("sprite", function() {
+  return gulp.src("source/img/*icon-*.svg")
+  .pipe(svgstore({
+    inlineSvg: true
+  }))
+  .pipe(rename("sprite.svg"))
+  .pipe(gulp.dest("build/img"))
 })
 
 gulp.task("server", function () {
