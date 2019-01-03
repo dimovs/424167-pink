@@ -8,6 +8,8 @@ let autoprefixer = require("autoprefixer");
 let server = require("browser-sync").create();
 let csso = require("gulp-csso");
 let rename = require("gulp-rename");
+let del = require("del");
+let imagemin = require("gulp-imagemin");
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -16,12 +18,22 @@ gulp.task("css", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(csso())
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
 });
+
+gulp.task("images", function() {
+  return gulp.src("source/img/**/*.{jpg, png, svg}")
+  .pipe(imagemin([
+    imagemin.optipng({optimizationLevel: 3}),
+    imagemin.jpegtran({progressive: true}),
+    imagemin.svgo()
+  ]))
+  .pipe(gulp.dest("source/img"))
+})
 
 gulp.task("server", function () {
   server.init({
@@ -43,6 +55,10 @@ gulp.task("copy", function() {
     "source/js/**"
   ], {base: "source"})
   .pipe(gulp.dest("build"))
+})
+
+gulp.task("clean", function() {
+  return del("build");
 })
 
 gulp.task("start", gulp.series("css", "server"));
