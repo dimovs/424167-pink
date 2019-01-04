@@ -170,8 +170,8 @@
             </tr>
           </table>
           <div class="toggles prices__toggles">
-            <button class="toggle toggle--active" type="button">1</button>
-            <button class="toggle" type="button">2</button>
+            <button class="toggle" type="button">1</button>
+            <button class="toggle toggle--active" type="button">2</button>
             <button class="toggle" type="button">3</button>
           </div>
         </div>
@@ -255,6 +255,41 @@
           navMain.classList.remove('menu--opened');
         }
       });
+
+      // Prices Toggles
+      document.body.addEventListener("click", function(event) {
+        if (!event.target.closest(".toggle")) {
+          return
+        };
+
+        if (!event.target.closest(".prices__toggles")) {
+          return
+        };
+
+        let blockTarget = event.target.closest(".prices__toggles");
+        let listTarget = blockTarget.querySelectorAll(".toggle");
+        let target = event.target.closest(".toggle");
+        let priceTable = document.body.querySelector(".prices__list")
+
+        for (let i = 0; i < listTarget.length; i++) {
+          listTarget[i].classList.remove("toggle--active");
+        };
+
+        target.classList.add("toggle--active");
+
+        if (target.innerHTML === "1") {
+          priceTable.style.marginLeft = 0 + "px";
+        }
+
+        if (target.innerHTML === "2") {
+          priceTable.style.marginLeft = -280 + "px";
+        }
+
+        if (target.innerHTML === "3") {
+          priceTable.style.marginLeft = -560 + "px";
+        }
+      })
+
     </script>
   </body>
 </html>
