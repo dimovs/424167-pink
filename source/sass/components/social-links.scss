@@ -5,19 +5,19 @@
   flex-wrap: wrap;
   padding-left: 0;
   list-style-type: none;
-  outline: 1px solid red;
+}
 
-  li {
-    margin-right: 15px;
+.social-links__item {
+  margin-right: 15px;
 
-    &:last-child {
-      margin-right: 0;
-    }
+  &:last-child {
+    margin-right: 0;
   }
 }
 
 .social-links__link {
   display: block;
+  position: relative;
   width: 50px;
   height: 50px;
   border: 3px solid rgb(233, 235, 236);
@@ -30,5 +30,35 @@
   &:active {
     border-color: rgb(233, 235, 236);
     opacity: 0.2;
+  }
+}
+
+.social-links__icon {
+  position: absolute;
+  top: calc(50% - 7.5px);
+  left: calc(50% - 9px);
+  fill: rgb(210, 40, 86);
+
+  &:hover {
+    fill: rgb(40, 54, 69);
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--tw {
+    top: calc(50% - 7.5px);
+    left: calc(50% - 9px);
+  }
+
+  &--fb {
+  top: calc(50% - 10px);
+  left: calc(50% - 4.5px);
+  }
+
+  &--yb {
+  top: calc(50% - 7.5px);
+  left: calc(50% - 9px);
   }
 }

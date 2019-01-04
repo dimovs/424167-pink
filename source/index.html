@@ -211,35 +211,44 @@
             </picture>
           </a>
           <ul class="social-links page-footer__social-links">
-            <li>
+            <li class="social-links__item">
               <a class="social-links__link" href="#">
                 <span class="hidden">Наша страница на Twitter</span>
-                <img src="img/icon-twitter.svg" alt="Наш Твиттер">
+                <svg class="social-links__icon social-links__icon--tw" width="18" height="15">
+                  <use href="#icon-twitter"></use>
+                </svg>
               </a>
             </li>
-            <li>
-              <a class="social-links__link" href="#">
+            <li class="social-links__item">
+              <a class="social-links__link social-links__link--fb" href="#">
                 <span class="hidden">Наша страница на Facebook</span>
-                <img src="img/icon-facebook.svg" alt="Наш Facebook">
+                <svg class="social-links__icon social-links__icon--tw" width="18" height="20">
+                  <use href="#icon-facebook"></use>
+                </svg>
               </a>
             </li>
-            <li>
-              <a class="social-links__link" href="#">
+            <li class="social-links__item">
+              <a class="social-links__link social-links__link--yb" href="#">
                 <span class="hidden">Наша страница на YouTube</span>
-                <img src="img/icon-youtube.svg" alt="Наш канал на YouTube">
+                <svg class="social-links__icon social-links__icon--tw" width="15" height="15">
+                  <use href="#icon-youtube"></use>
+                </svg>
               </a>
             </li>
           </ul>
           <p class="page-footer__copyright">
             Разработано
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-              <img class="copyright__icon" src="img/logo-htmlacademy.svg" alt="HTML Academy">
+              <svg class="page-footer__copyright-icon" width="27" height="34">
+                <use href="#logo-htmlacademy">
+              </svg>
             </a>
           </p>
         </div>
       </div>
     </footer>
     <script>
+      // Menu Trigger
       let navMain = document.querySelector('.menu');
       let navTrigger = document.querySelector('.menu__trigger');
 
