@@ -299,6 +299,43 @@
         }
       })
 
+      // Reviews Toggles
+      document.body.addEventListener("click", function(event) {
+        if (!event.target.closest(".toggle")) {
+          return
+        };
+
+        if (!event.target.closest(".reviews__toggles")) {
+          return
+        };
+
+        let blockTarget = event.target.closest(".reviews__toggles");
+        let listTarget = blockTarget.querySelectorAll(".toggle");
+        let target = event.target.closest(".toggle");
+        let listReviews = document.body.querySelectorAll(".reviews__item")
+
+        for (let i = 0; i < listTarget.length; i++) {
+          listTarget[i].classList.remove("toggle--active");
+        };
+
+        for (let i = 0; i < listReviews.length; i++) {
+          listReviews[i].style.display = "none";
+        };
+
+        target.classList.add("toggle--active");
+
+        if (target.innerHTML === "1") {
+          listReviews[0].style.display = "block";
+        }
+
+        if (target.innerHTML === "2") {
+          listReviews[1].style.display = "block";
+        }
+
+        if (target.innerHTML === "3") {
+          listReviews[2].style.display = "block";
+        }
+      })
     </script>
   </body>
 </html>
